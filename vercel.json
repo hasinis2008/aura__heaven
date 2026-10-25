@@ -1,19 +1,13 @@
 {
   "functions": {
-    "api/**/*.php": {
+    "*.php": {
       "maxDuration": 60
     }
   },
   "routes": [
     {
-      "src": "/api/(.*)",
-      "dest": "/api/$1"
-    }
-  ],
-  "builds": [
-    {
-      "src": "api/**/*.php",
-      "use": "vercel-php"
+      "src": "/(.*)",
+      "dest": "/$1"
     }
   ]
 }
