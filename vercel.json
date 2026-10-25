@@ -1,9 +1,4 @@
 {
-  "functions": {
-    "**/*.php": {
-      "maxDuration": 60
-    }
-  },
   "builds": [
     {
       "src": "**/*.php",
