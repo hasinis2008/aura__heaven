@@ -5,6 +5,10 @@
     }
   }'
   "routes":[
-    ..... your existing router are here.....
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/$1"
+    }
   ]
 }
+                                                                                                                                                                                                                                                                                                                                                    
