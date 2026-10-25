@@ -176,11 +176,6 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
   }
-
-      // Fixed: Added X-Requested-With header to verify this isn't a malicious bot script
-      
-
-
   function setMessage(element, text, success) {
     if (!element) return;
     element.textContent = text;
