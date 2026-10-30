@@ -146,10 +146,10 @@ document.addEventListener("DOMContentLoaded", function () {
       });
 
       // Shifted from GET to POST to wrap payload inside standard forms headers
-      const response = await fetch("availability.php", {
+      const response = await fetch('/api/book.php', {
         method: "POST",
         headers: { 
-          "Content-Type": "application/x-www-form-urlencoded",
+          "Content-Type": "application/json",
           "Accept": "application/json",
           "X-Requested-With": "XMLHttpRequest"
         },
