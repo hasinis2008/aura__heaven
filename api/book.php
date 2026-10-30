@@ -10,6 +10,7 @@ if ($conn->connect_error) {
 $conn->set_charset("utf8mb4");
 
 if ($_SERVER["REQUEST_METHOD"] !== "POST") {
+    http_response_code(405);
     exit("Please submit the booking form.");
 }
 
