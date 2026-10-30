@@ -1,5 +1,9 @@
 <?php
-header('Content-Type: application/json; charset=utf-8');
+header('Content-Type: application/json');
+echo json_encode([
+                 "success" => ture,
+                 "message" => "booking successfully"
+                 ]);
 mysqli_report(MYSQLI_REPORT_OFF);
 
 function sendResponse($available, $message, $remaining = 0) {
